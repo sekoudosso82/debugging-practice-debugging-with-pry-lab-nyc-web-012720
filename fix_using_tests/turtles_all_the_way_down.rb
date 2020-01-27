@@ -9,6 +9,7 @@ def turtles
 end
 
 def turtle_traits(turtles)
+
         arr = []
         i = 0 
         while i < turtles.length 
@@ -30,5 +31,6 @@ def turtle_traits(turtles)
           end 
   arr 
   # binding.pry
+
 end
 
