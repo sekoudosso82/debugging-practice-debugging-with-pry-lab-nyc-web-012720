@@ -1,4 +1,4 @@
-
+require 'pry'
 def turtles
     [
       {name: "Donatello", weapon: "bo-staff", traits: ["serious", "leader"]},
@@ -9,9 +9,15 @@ def turtles
 end
 
 def turtle_traits(turtles)
-  turtles.map do |turtle|
-    turtle[:traits].each do |trait|
-      trait
-    end
-  end
+  # turtles.map do |turtle|
+    
+        # turtle[:traits].each do |trait|
+          
+          trait
+          binding.pry 
+        # end
+  # end
 end
+
+# it "`turtle_traits` should be able to iterate through the array without breaking." do
+#     expect(turtle_traits(turtles)).to eq([["serious", "leader"], ["party dude"], ["cool", "rude"], ["loves being a turtle"]])
