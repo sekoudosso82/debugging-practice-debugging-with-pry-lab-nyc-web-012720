@@ -32,18 +32,5 @@ def turtle_traits(turtles)
   arr 
   # binding.pry
 
-  # turtles.map do |turtle|
-    
-        # turtle[:traits].each do |trait|
-        i = 0 
-          while i < turtles.length 
-             p turtles[i][:traits]
-             i += 1
-          end 
-          
-          # binding.pry 
-        # end
-  # end
-
 end
 
