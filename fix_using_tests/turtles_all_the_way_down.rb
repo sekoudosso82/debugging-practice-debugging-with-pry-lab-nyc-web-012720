@@ -9,15 +9,26 @@ def turtles
 end
 
 def turtle_traits(turtles)
-  turtles.map do |turtles[:traits]|
-    
-        # turtle[:traits].each do |trait|
-          
-          trait
-          binding.pry 
-        # end
-  # end
+        arr = []
+        i = 0 
+        while i < turtles.length 
+               index_traits = 0 
+               temp_arr = []
+            
+               if (turtles[i][:traits].class == Array)
+                   while index_traits < turtles[i][:traits].length
+                        temp_arr.push(turtles[i][:traits][index_traits])
+                        index_traits += 1
+                   end 
+               end 
+               if (turtles[i][:traits].class == String)
+                    temp_arr.push(turtles[i][:traits])
+               end 
+            arr.push(temp_arr)
+            
+             i += 1
+          end 
+  arr 
+  # binding.pry
 end
 
-# it "`turtle_traits` should be able to iterate through the array without breaking." do
-#     expect(turtle_traits(turtles)).to eq([["serious", "leader"], ["party dude"], ["cool", "rude"], ["loves being a turtle"]])
